@@ -4,7 +4,6 @@ class PigLatinizer
     array = phrase.split(" ")
     pl = []
     array.each do |w|
-      binding.pry
       word = w.split("")
       if word[0].include?(/[aeiou]/)
         word << "way"
