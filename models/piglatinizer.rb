@@ -18,6 +18,7 @@ class PigLatinizer
       end
     end
     pl.join(" ")
+    binding.pry
   end
 
 end
