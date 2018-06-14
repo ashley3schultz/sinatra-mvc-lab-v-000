@@ -17,7 +17,7 @@ class PigLatinizer
           word << "ay"
           pl << word.join
       end
-      
+
     end
     pl.join(" ")
   end
