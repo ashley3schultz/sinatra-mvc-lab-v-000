@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def piglatinize(phrase)
-    array = phrase.split(" ")
+    array = "pork".split(" ")
     pl = []
     array.each do |w|
       word = w.split("")
