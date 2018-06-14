@@ -5,15 +5,19 @@ class PigLatinizer
     pl = []
     array.each do |w|
       binding.pry
-      word = w.split(/[aeiou]/)
+      word = w.split("")
       if word[0].include?(/[aeiou]/)
         word << "way"
+        pl << word.join
       else
-        word.last = arr.first
-        word.unshift
-        word << "ay"
+        while word.first.include?(/[^aeiou]/)
+          word << = arr.first
+          word.unshift
+        end
+          word << "ay"
+          pl << word.join
       end
-      pl << word.join
+      
     end
     pl.join(" ")
   end
